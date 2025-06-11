@@ -71,6 +71,7 @@ app.post('/send2', async (req, res) => {
 
    try {
        const info = await transporter.sendMail(mailOptions);
+       console.log("Email sent:", info);
        res.send(info);
    } catch (error) {
        res.status(500).send(error.toString());
