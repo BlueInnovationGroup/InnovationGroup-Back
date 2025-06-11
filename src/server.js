@@ -97,5 +97,5 @@ app.get('/health' , (req, res) => {
     res.status(200).send('OK!');
 });
 
-app.listen(PORT, () => console.log(`serve is running on port ${PORT}`));
 const PORT = process.env.PORT || 2245;
+app.listen(PORT, () => console.log(`serve is running on port ${PORT}`));
